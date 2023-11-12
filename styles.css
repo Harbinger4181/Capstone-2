@@ -1,0 +1,366 @@
+.gradient-background {
+/*    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172); */
+    background: linear-gradient(300deg, #00bfff, violet, red); 
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+img{
+  object-fit: cover;
+}
+
+.gradient-background2 {
+/*    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172); */
+    background: linear-gradient(300deg, white, yellow, green); 
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+  }
+      
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+body{
+  margin: 0;
+}
+
+h1{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: lighter;
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: light;
+}
+
+h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: light;
+}
+
+#intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 70px 150px 150px 150px;
+}
+
+#intro>img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    width: auto;
+    height: 500px;
+    border-radius: 20%;
+}
+
+#intro>h1{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 20px 10px 10px 10px;
+    text-align: center; 
+    font-size: 6rem; 
+}
+
+#intro>h2{
+    padding: 10px 30px 30px 30px;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: light;
+    text-align: right;
+    padding-left: 30%;  
+}
+
+.educ>li{
+    display: flex;
+    justify-content: right;
+    padding: 0px 200px 20px 200px;
+}
+
+.educ>li>img{
+    height: 200px;
+    width: auto;
+    border-radius: 10%;
+}
+
+.CSA>.grid>h3{
+    text-align: left;
+    width: 100%;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.UO>.grid>h3{
+    text-align: right;
+    width: 100%;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+
+#WorkEducation{
+    background-image: url(./Images/BG/abstract-background-design-images-wallpaper-ai-generated_643360-89548.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.EducHeader{
+    margin: 0px 0px 0px 200px; 
+    padding-top:40px;
+}
+
+.educ>.UO>h3{
+    text-align: right;
+}
+
+#interests{
+  background-image: url(./Images/BG/InterestsBG.png);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+.interests{
+    display: flex;
+    margin: 30px 100px 30px 100px;
+}
+
+.interests>.CSA{
+  display: block;
+}
+
+.interests>li>.grid>img{
+  height: 200px;
+  width: auto;
+  border-radius: 10%;
+}
+
+.interests>li{
+  padding: 0 95px 0 95px;
+}
+
+.interests>li>.grid>p{
+  padding: 0;
+  color: #00bfff;
+  font-weight: bold;
+}
+
+.educ{
+  margin: 0;
+}
+
+.interests>li>.grid>h3{
+  color: #00bfff;
+}
+
+#contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 70px;
+  background-image: url(./Images/BG/contact.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+#contact h1{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+#contact .email{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#contact .phone{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#contact .LI{
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+@media (min-width: 319px) and (max-width: 1200px){
+    #intro{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 15px 0px;
+        height: 70%;
+    }
+    #intro>img{
+        padding: 20px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20%;
+    }
+
+    #intro>h1{
+        font-size: xx-large;
+    }
+
+    #intro>h2{
+        padding: 10px 30px 30px 30px;
+        font-size: 1rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: light;
+        text-align: justify;
+}
+
+/*----------------------------------------------*/
+
+  .EducHeader{
+    margin: 0; 
+    padding-top:20px;
+    text-align: center;
+  }
+
+  #WorkEducation{
+    background-image: url(./Images/BG/Screenshot\ 2023-11-12\ 101325.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .educ>li{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .educ>li>img{
+    height: auto;
+    width: auto;
+    border-radius: 10%;
+    max-width: 100%;
+  }
+
+  .educ>li>.grid>h3{
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    margin: 0;
+    
+
+  }
+
+  .grid{
+    display: flex;
+  }
+
+  .educ{
+    padding: 0;
+  }
+
+  .educ>.UO>h3{
+    text-align: right;
+  }
+
+  .CSA>.grid{
+    order: 2;
+  }
+
+  .CSA>.img{
+    order: 1;
+  }
+
+  .UO>.grid{
+    order: 2;
+  }
+
+  .UO>.grid{
+    order: 2;
+  }
+
+  .educ>li>img{
+    padding: 0px 20px 15px 20px;
+    border-radius: 20%;
+  }
+
+  /*/////////////////////////////////////////////*/
+
+  .interests>li>.grid>img{
+    height: auto;
+    width: auto;
+    border-radius: 10%;
+    max-width: 100%;
+  }
+
+  .interests{
+    display: block;
+  }
+  .interests img{
+    padding: 20px;
+  }
+
+  .interests>li>.grid>p{
+    padding: 0 20px 0 20px;
+  }
+
+  /*/////////////////////////////////////////////*/
+  
+  #contact{
+    display: block;
+    padding-top: 20px;
+  }
+
+
+}
+@media (min-width: 481px) and (max-width: 1200px){
+    body{
+      background-color: powderblue;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px){
+    body{
+      background-color: limegreen;
+    }
+}
+
+@media (min-width: 1601px){
+    body{
+      background-color: seagreen;
+    }
+}
